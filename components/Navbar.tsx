@@ -44,7 +44,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigate }) => {
         <button onClick={() => onNavigate('home', 'home')} className="flex items-center gap-2 group">
             <Hexagon className="w-8 h-8 text-primary group-hover:rotate-180 transition-transform duration-700" />
             <span className="text-xl font-bold font-orbitron tracking-widest text-main">
-                Aspiring<span className="text-primary">.Developer</span>
+                SKB<span className="text-primary">.Dev</span>
             </span>
         </button>
 
