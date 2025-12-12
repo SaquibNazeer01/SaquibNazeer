@@ -5,7 +5,7 @@ import GlitchText from './UI/GlitchText';
 import SocialHub from './SocialHub';
 import Typewriter from './UI/Typewriter';
 import { DEV_NAME, DEV_BIO } from '../constants';
-import profileImage from '../assets/images/profile.jpg';
+import profileImage from 'assets/images/profile.jpg';
 interface HeroProps {
     onNavigate: (view: 'home' | 'about', sectionId?: string) => void;
 }
