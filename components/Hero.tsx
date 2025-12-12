@@ -103,7 +103,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                 {/* Image Container */}
                 <div className="absolute inset-2 rounded-full overflow-hidden bg-surface border-2 border-primary/50 shadow-[0_0_50px_rgb(var(--color-primary)/0.3)] z-10 group">
                     <img 
-                        src="../assets/images/profile.jpg" 
+                        src="assets/images/profile.jpg" 
                         alt={DEV_NAME} 
                         className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-all duration-700 group-hover:scale-110 filter grayscale-[20%] group-hover:grayscale-0"
                     />
