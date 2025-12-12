@@ -4,11 +4,22 @@ import GlitchText from './UI/GlitchText';
 import SocialHub from './SocialHub';
 import Typewriter from './UI/Typewriter';
 import { DEV_NAME, DEV_BIO } from '../constants';
-import profileImage from 'assets/images/profile.jpg'; // Fixed: Direct import
 
 interface HeroProps {
     onNavigate: (view: 'home' | 'about', sectionId?: string) => void;
 }
+
+// Try these different approaches for the profile image:
+// Option 1: If image is in public folder
+const profileImage = '/assets/images/profile.jpg';
+
+// Option 2: If image is in src/assets folder
+// import profileImage from '../assets/images/profile.jpg'; // Uncomment this line if Option 1 doesn't work
+
+// Option 3: Dynamic import for Vercel
+// const profileImage = process.env.NODE_ENV === 'production' 
+//   ? '/assets/images/profile.jpg' 
+//   : new URL('../assets/images/profile.jpg', import.meta.url).href;
 
 const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
   return (
@@ -103,7 +114,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                 {/* Image Container */}
                 <div className="absolute inset-2 rounded-full overflow-hidden bg-surface border-2 border-primary/50 shadow-[0_0_50px_rgb(var(--color-primary)/0.3)] z-10 group">
                     <img 
-                      src={profileImage} // Fixed: Changed from profileImage2 to profileImage
+                      src={profileImage} 
                       alt="Profile" 
                       className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-all duration-700 group-hover:scale-110 filter grayscale-[20%] group-hover:grayscale-0"
                     />
