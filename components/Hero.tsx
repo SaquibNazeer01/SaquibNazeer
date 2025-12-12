@@ -11,10 +11,10 @@ interface HeroProps {
 
 // Try these different approaches for the profile image:
 // Option 1: If image is in public folder
-const profileImage = '/assets/images/profile.jpg';
+//const profileImage = 'assets/images/profile.jpg';
 
 // Option 2: If image is in src/assets folder
-// import profileImage from '../assets/images/profile.jpg'; // Uncomment this line if Option 1 doesn't work
+import profileImage from '../assets/images/profile.jpg'; // Uncomment this line if Option 1 doesn't work
 
 // Option 3: Dynamic import for Vercel
 // const profileImage = process.env.NODE_ENV === 'production' 
