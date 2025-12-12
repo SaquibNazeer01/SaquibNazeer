@@ -129,7 +129,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                           <div className="w-3 h-3 bg-secondary rounded-full animate-pulse" />
                           <div className="absolute inset-0 bg-secondary rounded-full animate-ping opacity-50" />
                         </div>
-                        <div className="text-[10px] sm:text-xs text-secondary font-orbitron tracking-widest">NEURAL LINK</div>
+                        <div className="text-[10px] sm:text-xs text-secondary font-orbitron tracking-widest">FREELANCER</div>
                     </div>
                     <div className="flex items-center justify-between gap-4">
                       <div className="text-xs text-muted font-mono">STATUS</div>
