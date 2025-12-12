@@ -3,7 +3,7 @@ import React from 'react';
 import { User, GraduationCap, Award, ArrowLeft, Brain, Cpu, Trophy, Star, Sparkles, Youtube } from 'lucide-react';
 import { DEV_NAME, ABOUT_BIO, EDUCATION } from '../constants';
 import GlitchText from './UI/GlitchText';
-import profileImage2 from '../assets/images/profile2.jpg';
+import profileImage2 from 'assets/images/profile2.jpg';
 
 interface AboutProps {
   onBack: () => void;
