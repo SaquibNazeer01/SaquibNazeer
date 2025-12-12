@@ -3,6 +3,7 @@ import React from 'react';
 import { User, GraduationCap, Award, ArrowLeft, Brain, Cpu, Trophy, Star, Sparkles, Youtube } from 'lucide-react';
 import { DEV_NAME, ABOUT_BIO, EDUCATION } from '../constants';
 import GlitchText from './UI/GlitchText';
+import profileImage2 from 'assets/images/profile2.jpg';
 
 interface AboutProps {
   onBack: () => void;
@@ -120,7 +121,7 @@ const About: React.FC<AboutProps> = ({ onBack }) => {
                     {/* Image */}
                     <div className="relative w-full aspect-square rounded-xl overflow-hidden mb-6 border-2 border-primary/20 shadow-[0_0_30px_rgb(var(--color-primary)/0.2)]">
                         <img 
-                            src="../assets/images/profile2.jpg" 
+                            src={profileImage2}
                             alt={DEV_NAME} 
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
                         />
@@ -467,3 +468,4 @@ const About: React.FC<AboutProps> = ({ onBack }) => {
 };
 
 export default About;
+
