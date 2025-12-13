@@ -7,7 +7,7 @@ export const DEV_NAME = "Saquib Nazeer";
 export const DEV_TITLE = "Full Stack Developer | AI Enthusiast";
 export const DEV_BIO = "Building the digital future with scalable web architectures and immersive user experiences. Transforming complex problems into elegant, high-performance solutions.";
 
-export const DATA_VERSION = '2025-12-13-3';
+export const DATA_VERSION = '2025-12-13-2';
 
 export const ABOUT_BIO = `
 I am a passionate Full Stack Developer with a deep-rooted love for Artificial Intelligence and system architecture. My journey began with a curiosity about how software shapes the world, leading me to master modern web technologies and cloud infrastructures.
