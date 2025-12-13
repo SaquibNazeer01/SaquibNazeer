@@ -177,6 +177,16 @@ export const PROJECTS: Project[] = [
     imageUrl: '/images/insurance.png',
     link: 'https://swiftinsurex.wuaze.com/',
     category: 'Software'
+  },
+  {
+    id: '8',
+    title: 'EconoShop - Sustainable E-Commerce Platform',
+    description: 'A modern Sustainable E-Commerce Platform promoting eco-friendly shopping and ethical trade. Features include green product listings, carbon footprint tracking, AI-based eco recommendations, and reward points for sustainable choices — merging convenience with environmental responsibility. ',
+    technologies: ['React', 'Node', 'CSS', 'AI Integration'],
+    imageUrl: '/images/ecoshop.jpg',
+    link: 'https://youtu.be/jN5SsDSDm7c?si=b6yGlqfGVMVbEhFZ',
+    featured: true,
+    category: 'Web App'
   }
 ];
 
