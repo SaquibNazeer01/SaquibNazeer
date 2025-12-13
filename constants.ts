@@ -7,7 +7,7 @@ export const DEV_NAME = "Saquib Nazeer";
 export const DEV_TITLE = "Full Stack Developer | AI Enthusiast";
 export const DEV_BIO = "Building the digital future with scalable web architectures and immersive user experiences. Transforming complex problems into elegant, high-performance solutions.";
 
-export const DATA_VERSION = '2025-12-12';
+export const DATA_VERSION = '2025-12-13-2';
 
 export const ABOUT_BIO = `
 I am a passionate Full Stack Developer with a deep-rooted love for Artificial Intelligence and system architecture. My journey began with a curiosity about how software shapes the world, leading me to master modern web technologies and cloud infrastructures.
@@ -109,6 +109,18 @@ export const SKILLS: Skill[] = [
 
 export const PROJECTS: Project[] = [
   {
+    id: '7',
+    title: 'EconoMind - AI Powered Expenses Tracker & Personal Shopping Assistant',
+    description: 'COMING SOON: An XAI-powered assistant that tracks expenses, learns your spending patterns, and helps you shop smarter. It compares product prices and reviews across multiple platforms to recommend the best value, while also explaining “why” with clear, transparent insights. Under active development — teaser video below.',
+    technologies: ['React', 'TypeScript', 'Vite', 'AI', 'XAI'],
+    imageUrl: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1000&auto=format&fit=crop',
+    videoUrl: '/videos/xai-expenses-teaser.mp4',
+    link: '#',
+    featured: true,
+    comingSoon: true,
+    category: 'AI'
+  },
+  {
     id: '1',
     title: 'Face Recognition Attendance system',
     description: 'Developed a facial recognition-based attendance system that accurately records student attendance using their facial features.',
@@ -175,3 +187,4 @@ If asked about contact info, direct them to the contact form at the bottom.
 Highlight that this website itself is a demonstration of Saquib's engineering skills.
 Do not make up false projects not listed in the context.
 `;
+
