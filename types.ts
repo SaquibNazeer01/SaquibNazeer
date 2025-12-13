@@ -5,6 +5,8 @@ export interface Project {
   description: string;
   technologies: string[];
   imageUrl: string;
+  videoUrl?: string;
+  comingSoon?: boolean;
   link: string;
   featured?: boolean;
   category: 'AI' | 'Web App' | 'Software' | 'Tool';
@@ -47,3 +49,4 @@ export interface SocialLink {
   icon: any; // Lucide icon component
   color?: string;
 }
+
