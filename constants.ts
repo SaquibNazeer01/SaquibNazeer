@@ -135,7 +135,7 @@ export const PROJECTS: Project[] = [
     title: 'Smart Screen Controller',
     description: 'Smart Classroom Controller – Control slides and zoom using hand gestures and voice commands for seamless, touch-free teaching.',
     technologies: ['Python', 'MediaPipe', 'SpeechRecognition'],
-    imageUrl: '/assets/images/smart-controller.jpeg',
+    imageUrl: 'assets/images/smart-controller.jpeg',
     link: 'https://youtu.be/0fmJsbo6oIk?si=pGdZCy7MdWNg9LZR',
     featured: true,
     category: 'AI'
