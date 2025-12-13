@@ -113,7 +113,7 @@ export const PROJECTS: Project[] = [
     title: 'EconoMind - AI Powered Expenses Tracker & Personal Shopping Assistant',
     description: 'COMING SOON: An XAI-powered assistant that tracks expenses, learns your spending patterns, and helps you shop smarter. It compares product prices and reviews across multiple platforms to recommend the best value, while also explaining “why” with clear, transparent insights. Under active development — teaser video below.',
     technologies: ['React', 'Node', 'Python', 'CSS', 'AI Integration', 'TensorFlow'],
-    imageUrl: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1000&auto=format&fit=crop',
+    imageUrl: '../assets/images/',
     videoUrl: '/videos/xai-expenses-teaser.mp4',
     link: '#',
     featured: true,
@@ -125,7 +125,7 @@ export const PROJECTS: Project[] = [
     title: 'Face Recognition Attendance system',
     description: 'Developed a facial recognition-based attendance system that accurately records student attendance using their facial features.',
     technologies: ['Python', 'OpenCV', 'SQLite'],
-    imageUrl: 'https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1000&auto=format&fit=crop',
+    imageUrl: '../assets/images/Attendance.jpg',
     link: 'https://youtu.be/zxWtZIFV2-U?si=a2Fitm5zYI5f07B5',
     featured: true,
     category: 'AI'
@@ -135,7 +135,7 @@ export const PROJECTS: Project[] = [
     title: 'Smart Screen Controller',
     description: 'Smart Classroom Controller – Control slides and zoom using hand gestures and voice commands for seamless, touch-free teaching.',
     technologies: ['Python', 'MediaPipe', 'SpeechRecognition'],
-    imageUrl: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1000&auto=format&fit=crop',
+    imageUrl: '../assets/images/smart-controller.jpeg',
     link: 'https://youtu.be/0fmJsbo6oIk?si=pGdZCy7MdWNg9LZR',
     featured: true,
     category: 'AI'
@@ -145,7 +145,7 @@ export const PROJECTS: Project[] = [
     title: 'EliteStyle',
     description: 'A fully functional eCommerce platform built with PHP, featuring dynamic product and category management, secure cart and checkout functionality, and a professionally redesigned frontend for a modern shopping experience. The system supports real-time product listings, category filtering, and seamless integration between the frontend UI and backend logic.',
     technologies: ['HTML', 'CSS', 'Javascript', 'PHP', 'MySQL'],
-    imageUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop',
+    imageUrl: '../assets/images/elitestyle.png',
     link: 'https://youtu.be/G4PxR9NKixY?si=OOmlCXY34jJmIVzw',
     category: 'Web App'
   },
@@ -154,7 +154,7 @@ export const PROJECTS: Project[] = [
     title: 'Visitor Management System',
     description: 'Designed and implemented an automated visitor check-in/check-out system, improving facility security and reducing manual work by 60%.',
     technologies: ['Java', 'JavaFX', 'SQLite'],
-    imageUrl: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1000&auto=format&fit=crop',
+    imageUrl: '../assets/images/visitor-management.jpg',
     link: '#',
     category: 'Software'
   },
@@ -164,7 +164,7 @@ export const PROJECTS: Project[] = [
     title: 'AI-Powered Market Prediction Tool',
     description: 'Developing an AI-powered tool to predict market trends using machine learning algorithms. The tool will provide actionable insights through data visualization.',
     technologies: ['Python', 'TensorFlow', 'Yahoo Finance API'],
-    imageUrl: 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?q=80&w=1000&auto=format&fit=crop',
+    imageUrl: '../assets/images/market-prediction.jpg',
     link: '#',
      comingSoon: true,
     category: 'Tool'
@@ -174,7 +174,7 @@ export const PROJECTS: Project[] = [
     title: 'SwiftInsureX',
     description: 'Built a web-based system for managing insurance policies, claims, and customer interactions with in-built AI ChatBot Assistance. Integrates WhatsApp reminders for payments and renewals.',
     technologies: ['HTML', 'CSS', 'Javascript', 'PHP', 'MySQL', 'DBMS'],
-    imageUrl: 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?q=80&w=1000&auto=format&fit=crop',
+    imageUrl: '../assets/images/insurance.png',
     link: 'https://swiftinsurex.wuaze.com/',
     category: 'Software'
   }
