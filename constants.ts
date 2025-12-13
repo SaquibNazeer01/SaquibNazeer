@@ -112,7 +112,7 @@ export const PROJECTS: Project[] = [
     id: '7',
     title: 'EconoMind - AI Powered Expenses Tracker & Personal Shopping Assistant',
     description: 'COMING SOON: An XAI-powered assistant that tracks expenses, learns your spending patterns, and helps you shop smarter. It compares product prices and reviews across multiple platforms to recommend the best value, while also explaining “why” with clear, transparent insights. Under active development — teaser video below.',
-    technologies: ['React', 'TypeScript', 'Vite', 'AI', 'XAI'],
+    technologies: ['React', 'Node', 'Python', 'CSS', 'AI Integration', 'TensorFlow'],
     imageUrl: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1000&auto=format&fit=crop',
     videoUrl: '/videos/xai-expenses-teaser.mp4',
     link: '#',
@@ -166,7 +166,8 @@ export const PROJECTS: Project[] = [
     technologies: ['Python', 'TensorFlow', 'Yahoo Finance API'],
     imageUrl: 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?q=80&w=1000&auto=format&fit=crop',
     link: '#',
-    category: 'AI'
+     comingSoon: true,
+    category: 'Tool'
   },
   {
     id: '6',
