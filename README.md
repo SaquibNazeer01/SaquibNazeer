@@ -3,7 +3,7 @@
 Futuristic developer portfolio SPA with a cyberpunk UI, animated ambience, real contact workflow, an AI assistant, and an upcoming-project teaser video card.
 
 <div align="center">
-	<img width="1200" height="475" alt="GHBanner" src="https://saquibnazeer.vercel.app/" />
+	<img width="1200" height="475" alt="public/images/Screenshot 2025-12-13 205941.png" />
 </div>
 
 ---
