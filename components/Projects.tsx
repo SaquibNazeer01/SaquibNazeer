@@ -1,14 +1,29 @@
 
-import React, { useState, useRef } from 'react';
-import { ExternalLink, Github, Layers, Cpu, Globe, Terminal, ChevronLeft, ChevronRight } from 'lucide-react';
+import React, { useRef, useState } from 'react';
+import { ExternalLink, Github, Layers, Cpu, Globe, Terminal, ChevronLeft, ChevronRight, Volume2, VolumeX } from 'lucide-react';
 import { useData } from '../contexts/DataContext';
 
 const Projects: React.FC = () => {
   const { projects } = useData();
   const [filter, setFilter] = useState<'All' | 'AI' | 'Web App' | 'Software' | 'Tool'>('All');
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const videoRefs = useRef<Record<string, HTMLVideoElement | null>>({});
+  const [unmutedById, setUnmutedById] = useState<Record<string, boolean>>({});
 
   const filteredProjects = projects.filter(p => filter === 'All' || p.category === filter);
+
+  const toggleVideoAudio = (projectId: string) => {
+    setUnmutedById((prev) => {
+      const nextUnmuted = !prev[projectId];
+      const el = videoRefs.current[projectId];
+      if (el) {
+        el.muted = !nextUnmuted;
+        el.volume = nextUnmuted ? 1 : 0;
+        if (nextUnmuted) void el.play();
+      }
+      return { ...prev, [projectId]: nextUnmuted };
+    });
+  };
 
   const categories = [
     { name: 'All', icon: Layers },
@@ -34,6 +49,11 @@ const Projects: React.FC = () => {
       <style>{`
           .hide-scrollbar::-webkit-scrollbar {
             display: none;
+          }
+
+          .hide-scrollbar {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
           }
       `}</style>
 
@@ -103,26 +123,83 @@ const Projects: React.FC = () => {
              <div 
                 ref={scrollContainerRef}
                 className="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory hide-scrollbar px-4 md:px-0"
-                style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
-                {filteredProjects.map((project, index) => (
-                    <div 
-                        key={project.id}
-                        className="min-w-[300px] md:min-w-[350px] lg:min-w-[400px] snap-center bg-surface border border-muted/20 rounded-xl overflow-hidden group hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_rgb(var(--color-primary)/0.15)] flex flex-col"
-                    >
-                        {/* Image */}
+                {filteredProjects.map((project) => {
+                    const isUnmuted = !!unmutedById[project.id];
+
+                    return (
+                      <div 
+                          key={project.id}
+                          className={`min-w-[300px] md:min-w-[350px] lg:min-w-[400px] snap-center bg-surface border rounded-xl overflow-hidden group transition-all duration-300 flex flex-col ${
+                            project.comingSoon
+                              ? 'border-green-500/30 hover:border-green-400/50 hover:shadow-[0_0_35px_rgba(34,197,94,0.12)]'
+                              : 'border-muted/20 hover:border-primary/50 hover:shadow-[0_0_30px_rgb(var(--color-primary)/0.15)]'
+                          }`}
+                      >
+                        {/* Media */}
                         <div className="relative h-48 overflow-hidden">
-                            <img 
-                                src={project.imageUrl} 
-                                alt={project.title} 
+                            {project.videoUrl ? (
+                              <video
+                                ref={(el) => {
+                                  videoRefs.current[project.id] = el;
+                                }}
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            />
+                                autoPlay
+                                muted={!isUnmuted}
+                                defaultMuted
+                                loop
+                                playsInline
+                                preload="auto"
+                                poster={project.imageUrl}
+                                aria-label={`${project.title} video preview`}
+                                onLoadedMetadata={(e) => {
+                                  e.currentTarget.muted = !isUnmuted;
+                                  e.currentTarget.volume = isUnmuted ? 1 : 0;
+                                }}
+                                onPlay={(e) => {
+                                  e.currentTarget.muted = !isUnmuted;
+                                  e.currentTarget.volume = isUnmuted ? 1 : 0;
+                                }}
+                              >
+                                <source src={project.videoUrl} type="video/mp4" />
+                              </video>
+                            ) : (
+                              <img 
+                                  src={project.imageUrl} 
+                                  alt={project.title} 
+                                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                              />
+                            )}
                             <div className="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-80" />
+
+                            {/* Audio Toggle */}
+                            {project.videoUrl && (
+                              <button
+                                type="button"
+                                onClick={() => toggleVideoAudio(project.id)}
+                                className={`absolute bottom-3 left-3 z-20 inline-flex items-center gap-2 px-3 py-2 rounded-lg border text-[11px] font-bold tracking-widest uppercase transition-colors backdrop-blur-md ${
+                                  isUnmuted
+                                    ? 'bg-green-500/15 border-green-500/30 text-green-300 hover:bg-green-500/20'
+                                    : 'bg-surface/70 border-primary/25 text-primary hover:bg-surface/90'
+                                }`}
+                                aria-label={isUnmuted ? 'Mute video audio' : 'Unmute video audio'}
+                              >
+                                {isUnmuted ? <Volume2 className="w-4 h-4" /> : <VolumeX className="w-4 h-4" />}
+                                {isUnmuted ? 'MUTE' : 'UNMUTE'}
+                              </button>
+                            )}
                             
                             {/* Category Badge */}
                             <div className="absolute top-3 right-3 px-2 py-1 bg-surface/80 backdrop-blur-md rounded border border-primary/20 text-[10px] font-bold text-primary uppercase tracking-widest">
                                 {project.category}
                             </div>
+
+                            {/* Coming Soon Badge */}
+                            {project.comingSoon && (
+                              <div className="absolute top-3 left-3 px-2 py-1 bg-green-500/15 backdrop-blur-md rounded border border-green-500/30 text-[10px] font-bold text-green-300 uppercase tracking-widest animate-pulse">
+                                COMING SOON
+                              </div>
+                            )}
                         </div>
 
                         {/* Content */}
@@ -149,18 +226,26 @@ const Projects: React.FC = () => {
                             </div>
 
                             {/* Link */}
-                            <a 
-                                href={project.link} 
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="mt-auto flex items-center justify-between text-sm font-bold text-muted hover:text-primary transition-colors group/link"
-                            >
-                                <span>VIEW PROJECT</span>
-                                <ExternalLink className="w-4 h-4 group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform" />
-                            </a>
+                            {project.comingSoon ? (
+                              <div className="mt-auto flex items-center justify-between text-sm font-bold text-green-300/90">
+                                <span>UNDER DEVELOPMENT</span>
+                                <span className="text-[11px] font-mono text-green-300/70">ETA: SOON</span>
+                              </div>
+                            ) : (
+                              <a 
+                                  href={project.link} 
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="mt-auto flex items-center justify-between text-sm font-bold text-muted hover:text-primary transition-colors group/link"
+                              >
+                                  <span>VIEW PROJECT</span>
+                                  <ExternalLink className="w-4 h-4 group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform" />
+                              </a>
+                            )}
                         </div>
                     </div>
-                ))}
+                      );
+                    })}
                 
                  {filteredProjects.length === 0 && (
                   <div className="w-full flex justify-center py-10">
@@ -175,3 +260,4 @@ const Projects: React.FC = () => {
 };
 
 export default Projects;
+
