@@ -125,7 +125,7 @@ export const PROJECTS: Project[] = [
     title: 'Face Recognition Attendance system',
     description: 'Developed a facial recognition-based attendance system that accurately records student attendance using their facial features.',
     technologies: ['Python', 'OpenCV', 'SQLite'],
-    imageUrl: '/images/Attendance.jpg',
+    imageUrl: '/images/Attendance.JPG',
     link: 'https://youtu.be/zxWtZIFV2-U?si=a2Fitm5zYI5f07B5',
     featured: true,
     category: 'AI'
