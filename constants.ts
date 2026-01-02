@@ -187,6 +187,15 @@ export const PROJECTS: Project[] = [
     link: 'https://youtu.be/jN5SsDSDm7c?si=b6yGlqfGVMVbEhFZ',
     featured: true,
     category: 'Web App'
+  },
+    {
+    id: '9',
+    title: 'DeepTraceX',
+    description: 'Built a web-application that lets you check whether your image is AI generated or not.',
+    technologies: ['TypeScript', 'React', 'CSS'],
+    imageUrl: '/images/DeepTraceX.png',
+    link: 'https://youtu.be/69ofbnRJJQI?si=XrOIwaVkXxXUxW1z',
+    category: 'Web App'
   }
 ];
 
