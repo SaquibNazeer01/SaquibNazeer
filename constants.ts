@@ -201,7 +201,7 @@ export const PROJECTS: Project[] = [
     title: 'VisionCGPA',
     description: 'AI Powered Anna University Standards CGPA calculator by uploading marksheet directly.',
     technologies: ['HTML', 'JavaScript', 'CSS'],
-    imageUrl: '/images/vision.jpeg',
+    imageUrl: '/images/vision.png',
     link: 'https://vision-cgpa.vercel.app',
     category: 'Tool'
   }
