@@ -117,7 +117,6 @@ export const PROJECTS: Project[] = [
     videoUrl: '/videos/xai-expenses-teaser.mp4',
     link: '#',
     featured: true,
-    comingSoon: true,
     category: 'AI'
   },
   {
@@ -196,6 +195,15 @@ export const PROJECTS: Project[] = [
     imageUrl: '/images/DeepTraceX.jpeg',
     link: 'https://youtu.be/69ofbnRJJQI?si=XrOIwaVkXxXUxW1z',
     category: 'Web App'
+  },
+  {
+    id: '10',
+    title: 'VisionCGPA',
+    description: 'AI Powered Anna University Standards CGPA calculator by uploading marksheet directly.',
+    technologies: ['HTML', 'JavaScript', 'CSS'],
+    imageUrl: '/images/vision.jpeg',
+    link: 'https://vision-cgpa.vercel.app',
+    category: 'Tool'
   }
 ];
 
