@@ -72,15 +72,15 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
             
             <div className="flex flex-col sm:flex-row gap-5 pt-4 justify-center md:justify-start">
               <button 
-                onClick={() => onNavigate('home', 'projects')}
-                className="group relative px-8 py-4 bg-primary text-white font-bold tracking-wider overflow-hidden rounded-lg shadow-[0_0_20px_rgb(var(--color-primary)/0.4)] transition-all hover:scale-105 hover:shadow-[0_0_30px_rgb(var(--color-primary)/0.6)]"
-              >
-                <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500 rounded-lg" />
-                <div className="relative flex items-center gap-2 justify-center">
-                  EXPLORE MY WORK
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </button>
+  onClick={() => window.open("https://drive.google.com/file/d/1VI8GFt9X1iXj6tFWJChIkYm911kMwSHQ/view?usp=sharing", "_blank")}
+  className="group relative px-8 py-4 bg-primary text-white font-bold tracking-wider overflow-hidden rounded-lg shadow-[0_0_20px_rgb(var(--color-primary)/0.4)] transition-all hover:scale-105 hover:shadow-[0_0_30px_rgb(var(--color-primary)/0.6)]"
+>
+  <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500 rounded-lg" />
+  <div className="relative flex items-center gap-2 justify-center">
+    DOWNLOAD MY RESUME
+    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+  </div>
+</button>
               
               <button 
                 onClick={() => onNavigate('about')}
