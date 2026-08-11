@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saquib Nazeer | Full Stack Developer & AI Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of Saquib Nazeer - Full Stack Developer and AI Enthusiast specializing in scalable web systems, computer vision, and modern intelligent UI/UX." />
+    
+    <!-- Custom Cyber SKB Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=4" />
+    <link rel="alternate icon" type="image/svg+xml" href="/favicon.svg?v=4" />
+    <link rel="apple-touch-icon" href="/favicon.svg?v=4" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: 'rgb(var(--color-primary) / <alpha-value>)',
+              secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
+              background: 'rgb(var(--color-bg) / <alpha-value>)',
+              surface: 'rgb(var(--color-surface) / <alpha-value>)',
+              surfaceCard: 'rgb(var(--color-surface-card) / <alpha-value>)',
+              main: 'rgb(var(--color-text-main) / <alpha-value>)',
+              muted: 'rgb(var(--color-text-muted) / <alpha-value>)',
+              accent: 'rgb(var(--color-accent) / <alpha-value>)',
+            },
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+              display: ['"Space Grotesk"', 'sans-serif'],
+              orbitron: ['Orbitron', 'sans-serif'],
+              mono: ['"JetBrains Mono"', 'monospace'],
+              rajdhani: ['Rajdhani', 'sans-serif'],
+            },
+            boxShadow: {
+              'glow-sm': '0 0 15px rgb(var(--color-primary) / 0.25)',
+              'glow-md': '0 0 30px rgb(var(--color-primary) / 0.35)',
+              'glow-lg': '0 0 50px rgb(var(--color-primary) / 0.45)',
+              'glow-secondary': '0 0 30px rgb(var(--color-secondary) / 0.35)',
+              'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'float-slow': 'float 9s ease-in-out infinite',
+              'pulse-glow': 'pulse-glow 3s ease-in-out infinite',
+              'border-beam': 'border-beam 8s linear infinite',
+              'shimmer': 'shimmer 2.5s linear infinite',
+              'spin-slow': 'spin-slow 20s linear infinite',
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Orbitron:wght@500;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
+  </head>
+  <body class="font-sans antialiased selection:bg-primary/30 selection:text-main">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

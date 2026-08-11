@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="discBg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="70%" stop-color="#030712" />
+      <stop offset="100%" stop-color="#000000" />
+    </radialGradient>
+
+    <!-- Main Lettermark Gradient -->
+    <linearGradient id="neonBrand" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5FF" />
+      <stop offset="45%" stop-color="#38BDF8" />
+      <stop offset="75%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#A855F7" />
+    </linearGradient>
+
+    <!-- Subtle Edge Ring -->
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#3B82F6" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.6" />
+    </linearGradient>
+
+    <!-- Crisp Soft Glow -->
+    <filter id="crispGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00F5FF" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Clean Circular Dark Badge -->
+  <circle cx="256" cy="256" r="248" fill="url(#discBg)" />
+  <circle cx="256" cy="256" r="240" fill="none" stroke="url(#ringGrad)" stroke-width="4" />
+
+  <!-- High-Impact Stylized 'SKB' Monogram -->
+  <g filter="url(#crispGlow)" fill="url(#neonBrand)">
+    <!-- Letter 'S' -->
+    <path d="
+      M 168,172 
+      C 168,144 146,132 118,132 
+      C 86,132 64,152 64,188 
+      C 64,242 168,246 168,312 
+      C 168,356 142,380 114,380 
+      C 80,380 62,354 62,328 
+      L 96,328 
+      C 96,342 104,352 115,352 
+      C 128,352 136,340 136,312 
+      C 136,260 32,254 32,188 
+      C 32,136 68,104 118,104 
+      C 166,104 200,132 200,172 
+      Z
+    " />
+
+    <!-- Letter 'K' -->
+    <!-- K Stem -->
+    <rect x="208" y="108" width="34" height="268" rx="8" />
+    <!-- K Upper Diagonal -->
+    <path d="
+      M 238,252 
+      L 306,120 
+      L 348,120 
+      L 268,266 
+      Z
+    " />
+    <!-- K Lower Diagonal -->
+    <path d="
+      M 252,240 
+      L 336,376 
+      L 294,376 
+      L 224,268 
+      Z
+    " />
+
+    <!-- Letter 'B' -->
+    <path d="
+      M 360,108 
+      L 424,108 
+      C 460,108 480,126 480,164 
+      C 480,194 466,216 438,228 
+      C 472,240 484,264 484,298 
+      C 484,342 460,376 420,376 
+      L 360,376 
+      Z 
+      M 394,136 
+      L 394,222 
+      L 420,222 
+      C 440,222 450,210 450,180 
+      C 450,150 440,136 420,136 
+      Z 
+      M 394,248 
+      L 394,348 
+      L 422,348 
+      C 442,348 454,334 454,300 
+      C 454,264 442,248 422,248 
+      Z
+    " />
+  </g>
+
+  <!-- Futuristic Cyber Accent Dot -->
+  <circle cx="256" cy="428" r="6" fill="#00F5FF" filter="url(#crispGlow)" />
+</svg>
