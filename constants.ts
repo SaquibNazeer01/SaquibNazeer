@@ -7,7 +7,7 @@ export const DEV_NAME = "Saquib Nazeer";
 export const DEV_TITLE = "Full Stack Developer | AI Enthusiast";
 export const DEV_BIO = "Building the digital future with scalable web architectures and immersive user experiences. Transforming complex problems into elegant, high-performance solutions.";
 
-export const DATA_VERSION = '2026-08-11-hackathon-v3';
+export const DATA_VERSION = '2026-08-12-projects-v5';
 
 export const ABOUT_BIO = `I am a passionate Full Stack Developer with a deep-rooted focus on Artificial Intelligence, Computer Vision, and scalable system architecture. My engineering journey began with an insatiable curiosity about how intelligent software shapes our digital world.
 
@@ -176,7 +176,8 @@ export const PROJECTS: Project[] = [
     howItWorks: 'Farmers upload or capture crop leaf photos; Deep Convolutional Neural Networks (CNNs) classify pathological disease patterns with confidence scoring; provides localized pesticide/fertilizer dosages, biological remedy advice, and climate-tailored preventive measures.',
     problemSolved: 'Mitigates severe crop loss by enabling early, instant disease diagnosis without requiring on-field agricultural scientist visits.',
     technologies: ['Python', 'PyTorch', 'Computer Vision', 'FastAPI', 'React', 'Tailwind CSS'],
-    imageUrl: '/images/krishiclinic.jpg',
+    imageUrl: '/images/forensifood.png',
+    videoUrl: '/videos/krishiclinic-video.mp4',
     link: 'https://github.com/SaquibNazeer01/KrishiCllinicAI',
     githubUrl: 'https://github.com/SaquibNazeer01/KrishiCllinicAI',
     metrics: 'Smart Crop Diagnostics',
