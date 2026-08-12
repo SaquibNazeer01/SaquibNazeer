@@ -296,7 +296,7 @@ export const PROJECTS: Project[] = [
     howItWorks: 'Implements MVC architecture with secure password hashing and session management; teachers and administrators perform CRUD operations on student profiles and marks; generates consolidated grade sheets and performance summaries.',
     problemSolved: 'Replaces error-prone manual spreadsheets with an organized, relational database system for fast, accurate grading.',
     technologies: ['PHP', 'MySQL', 'JavaScript', 'HTML5', 'CSS3', 'Apache'],
-    imageUrl: '/images/student-marks.jpg',
+    imageUrl: '/images/student-management-system.png',
     link: 'https://github.com/SaquibNazeer01/students-marks-management-system',
     githubUrl: 'https://github.com/SaquibNazeer01/students-marks-management-system',
     metrics: 'Academic Records Portal',
