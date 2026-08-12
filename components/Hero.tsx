@@ -94,24 +94,24 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 items-center">
           
           {/* Avatar Display - Order 1 on mobile, Order 2 on desktop (lg:order-2) */}
-          <div className="order-1 lg:order-2 lg:col-span-5 flex justify-center relative my-2 lg:my-0">
-            <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[26rem] lg:h-[26rem] animate-float">
+          <div className="order-1 lg:order-2 lg:col-span-5 flex justify-center relative my-4 sm:my-6 lg:my-0 px-4 sm:px-0">
+            <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-[22rem] lg:h-[22rem] animate-float">
               
               {/* Futuristic Cyber Orbit Rings */}
               <div className="absolute inset-0 border border-primary/40 rounded-full animate-[spin_18s_linear_infinite]" />
               <div className="absolute -inset-2 sm:-inset-4 border border-dashed border-secondary/30 rounded-full animate-[spin_28s_linear_infinite_reverse]" />
-              <div className="absolute -inset-4 sm:-inset-8 border-[0.5px] border-primary/20 rounded-full opacity-60 animate-pulse" />
+              <div className="absolute -inset-4 sm:-inset-6 border-[0.5px] border-primary/20 rounded-full opacity-60 animate-pulse" />
               
               {/* Orbiting Tech Particles */}
               <div className="absolute inset-0 animate-[spin_12s_linear_infinite]">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1.5 sm:-translate-y-2 w-2.5 sm:w-3 h-2.5 sm:h-3 bg-primary rounded-full shadow-glow-sm" />
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1.5 sm:-translate-y-2 w-2 sm:w-2.5 h-2 sm:h-2.5 bg-primary rounded-full shadow-glow-sm" />
               </div>
               <div className="absolute inset-0 animate-[spin_16s_linear_infinite_reverse]">
-                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1.5 sm:translate-y-3 w-2.5 sm:w-3 h-2.5 sm:h-3 bg-secondary rounded-full shadow-glow-secondary" />
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1.5 sm:translate-y-2.5 w-2 sm:w-2.5 h-2 sm:h-2.5 bg-secondary rounded-full shadow-glow-secondary" />
               </div>
 
               {/* Main Avatar Photo */}
-              <div className="absolute inset-2 sm:inset-3 rounded-full overflow-hidden bg-surface border-2 border-primary/60 shadow-[0_0_40px_rgb(var(--color-primary)/0.35)] sm:shadow-[0_0_60px_rgb(var(--color-primary)/0.35)] z-10 group">
+              <div className="absolute inset-2 sm:inset-3 rounded-full overflow-hidden bg-surface border-2 border-primary/60 shadow-[0_0_30px_rgb(var(--color-primary)/0.35)] sm:shadow-[0_0_50px_rgb(var(--color-primary)/0.35)] z-10 group">
                 <img 
                   src={profileImage} 
                   alt={DEV_NAME} 
@@ -121,29 +121,29 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent mix-blend-overlay" />
               </div>
               
-              {/* Floating Freelancer & Status Card */}
-              <div className="hidden sm:block absolute -left-4 sm:-left-8 bottom-6 sm:bottom-10 bg-surface/90 backdrop-blur-xl border border-primary/30 p-3 sm:p-4 rounded-2xl shadow-2xl animate-float z-20">
-                <div className="flex items-center gap-2 sm:gap-3 border-b border-muted/15 pb-2 mb-2">
-                  <div className="relative">
-                    <div className="w-2 sm:w-2.5 h-2 sm:h-2.5 bg-emerald-400 rounded-full animate-pulse" />
+              {/* Floating Freelancer & Status Card - Scaled & Positioned safely outside face */}
+              <div className="absolute -left-3 sm:-left-6 md:-left-8 lg:-left-10 -bottom-2 sm:bottom-1 md:bottom-3 lg:bottom-6 bg-surface/95 backdrop-blur-xl border border-primary/40 p-2 sm:p-2.5 md:p-3 rounded-xl sm:rounded-2xl shadow-xl z-20 max-w-[155px] sm:max-w-[185px] md:max-w-[210px] pointer-events-none">
+                <div className="flex items-center gap-1.5 sm:gap-2 border-b border-muted/15 pb-1 sm:pb-1.5 mb-1 sm:mb-1.5">
+                  <div className="relative flex-shrink-0">
+                    <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 bg-emerald-400 rounded-full animate-pulse" />
                     <div className="absolute inset-0 bg-emerald-400 rounded-full animate-ping opacity-60" />
                   </div>
-                  <div className="text-[10px] sm:text-[11px] text-emerald-400 font-mono font-bold tracking-widest uppercase">AVAILABLE NOW</div>
+                  <div className="text-[8px] sm:text-[9px] md:text-[10px] text-emerald-400 font-mono font-bold tracking-wider uppercase truncate">AVAILABLE NOW</div>
                 </div>
-                <div className="flex items-center justify-between gap-4 sm:gap-6">
-                  <span className="text-[11px] sm:text-xs text-muted font-mono">SPECIALTY</span>
-                  <span className="text-[11px] sm:text-xs font-bold text-main font-mono">FULL STACK / AI</span>
+                <div className="flex items-center justify-between gap-2 sm:gap-3">
+                  <span className="text-[8px] sm:text-[9px] md:text-[10px] text-muted font-mono">SPECIALTY</span>
+                  <span className="text-[8px] sm:text-[9px] md:text-[10px] font-bold text-main font-mono whitespace-nowrap">FULL STACK / AI</span>
                 </div>
-                <div className="w-full bg-muted/20 h-1.5 mt-2 rounded-full overflow-hidden">
+                <div className="w-full bg-muted/20 h-1 sm:h-1.5 mt-1 sm:mt-1.5 rounded-full overflow-hidden">
                   <div className="h-full bg-gradient-to-r from-primary to-secondary w-[92%] animate-pulse" />
                 </div>
               </div>
 
-              {/* Floating Role badge */}
-              <div className="hidden sm:block absolute -right-4 sm:-right-6 top-8 sm:top-14 bg-surface/90 backdrop-blur-xl border border-secondary/30 p-2.5 sm:p-3.5 rounded-2xl shadow-2xl z-20">
-                <div className="flex items-center gap-2">
-                  <Code2 className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-secondary" />
-                  <span className="text-[11px] sm:text-xs font-mono font-bold text-main">Full Stack Developer</span>
+              {/* Floating Role badge - Scaled & Positioned safely outside face */}
+              <div className="absolute -right-3 sm:-right-5 md:-right-7 lg:-right-9 -top-1 sm:top-2 md:top-4 lg:top-8 bg-surface/95 backdrop-blur-xl border border-secondary/40 px-2.5 py-1 sm:px-3 sm:py-1.5 md:px-3.5 md:py-2 rounded-xl sm:rounded-2xl shadow-xl z-20 pointer-events-none">
+                <div className="flex items-center gap-1.5 sm:gap-2">
+                  <Code2 className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-secondary flex-shrink-0" />
+                  <span className="text-[9px] sm:text-[10px] md:text-[11px] font-mono font-bold text-main whitespace-nowrap">Full Stack Developer</span>
                 </div>
               </div>
 
