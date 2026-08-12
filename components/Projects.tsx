@@ -236,6 +236,11 @@ const Projects: React.FC = () => {
                         alt={project.title}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         loading="lazy"
+                        onError={(e) => {
+                          const target = e.currentTarget;
+                          target.onerror = null;
+                          target.src = '/images/Screenshot 2025-12-13 205941.png';
+                        }}
                       />
                     )}
 
@@ -560,6 +565,11 @@ const Projects: React.FC = () => {
                     src={selectedProject.imageUrl}
                     alt={selectedProject.title}
                     className="w-full h-full object-cover"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      target.onerror = null;
+                      target.src = '/images/Screenshot 2025-12-13 205941.png';
+                    }}
                   />
                 )}
               </div>

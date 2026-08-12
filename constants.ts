@@ -149,25 +149,64 @@ export const SKILLS: Skill[] = [
 
 export const PROJECTS: Project[] = [
   {
-    id: '7',
-    title: 'EconoMind - AI Expense Tracker & Shopping Assistant',
-    description: 'An Explainable AI (XAI) powered financial assistant that tracks expenses, analyzes spending habits, and compares cross-platform product prices with transparent decision reasoning.',
-    whatIsIt: 'An intelligent personal finance and smart shopping copilot that leverages Explainable AI (XAI) to help users make smarter financial decisions by giving transparent rationales behind every saving recommendation.',
-    howItWorks: 'Integrates real-time financial tracking pipelines with machine learning clustering models to categorize user spending, track recurring cash drains, and automatically crawl live e-commerce platforms to find the best verified deals with contextual decision explanations.',
-    problemSolved: 'Eliminates blind spending and buyer remorse by replacing black-box financial apps with transparent, interpretable AI advice, ensuring users clearly understand why a purchase is recommended or flagged.',
-    technologies: ['React', 'Node.js', 'Python', 'XAI Integration', 'TensorFlow'],
-    imageUrl: '/images/economind.jpg',
-    videoUrl: '/videos/xai-expenses-teaser.mp4',
-    link: '#',
-    githubUrl: 'https://github.com/SaquibNazeer01',
-    metrics: 'Smart Financial Intelligence',
+    id: '11',
+    title: 'ForensiFood AI - Food Delivery Fraud Detection',
+    description: 'AI-powered forensic fraud detection platform for food delivery refund claims with a 4-layer forensic pipeline analyzing claims in under 2.5 seconds.',
+    whatIsIt: 'A full-stack forensic fraud detection system for food delivery complaints that analyzes photo evidence, metadata, and customer descriptions to prevent fraudulent refund claims.',
+    howItWorks: 'When users submit a refund claim with a photo and description, a 4-layer AI pipeline executes: (1) Image Forensics (Error Level Analysis, EXIF metadata inspection, compression artifacts), (2) Multimodal AI Vision (semantic consistency check via Gemini Vision), (3) Behavioral Analysis (claim frequency, device fingerprinting, amount anomalies), and (4) Perceptual Hash (pHash) duplicate matching across accounts to produce a 0-100 risk verdict.',
+    problemSolved: 'Stops fraudulent food claims that cost delivery platforms ₹2,000+ crore annually in India alone, instantly approving legitimate customers while flagging or rejecting fraudsters.',
+    technologies: ['React 19', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express', 'SQLite', 'Google Gemini Vision', 'JWT'],
+    imageUrl: '/images/forensifood.png',
+    link: 'https://github.com/SaquibNazeer01/ForensiFood-AI',
+    githubUrl: 'https://github.com/SaquibNazeer01/ForensiFood-AI',
+    metrics: '4-Layer AI Forensics (< 2.5s)',
     highlights: [
-      'Explainable AI recommendations with transparency reasoning',
-      'Cross-platform price comparison & automated discount alerts',
-      'Behavioral spending clustering and budget projections'
+      '4-Layer Forensic Pipeline: ELA, EXIF metadata, AI Vision & pHash duplicate matching',
+      '0-100 Risk Score generated in under 2.5s with automated approval/rejection verdicts',
+      'Admin Investigation Room with behavioral radar, live analytics, and 1-click batch AI scanning'
     ],
     featured: true,
-    comingSoon: true,
+    category: 'AI'
+  },
+  {
+    id: '12',
+    title: 'KrishiClinic AI - Smart Crop Health & Diagnostics',
+    description: 'AI-driven agricultural diagnostics platform empowering farmers with computer-vision crop disease detection, soil health recommendations, localized treatment advisories, and weather-adaptive crop protection.',
+    whatIsIt: 'An intelligent plant clinic and agricultural diagnostic platform designed to detect crop pathology and leaf diseases from field photographs in real time.',
+    howItWorks: 'Farmers upload or capture crop leaf photos; Deep Convolutional Neural Networks (CNNs) classify pathological disease patterns with confidence scoring; provides localized pesticide/fertilizer dosages, biological remedy advice, and climate-tailored preventive measures.',
+    problemSolved: 'Mitigates severe crop loss by enabling early, instant disease diagnosis without requiring on-field agricultural scientist visits.',
+    technologies: ['Python', 'PyTorch', 'Computer Vision', 'FastAPI', 'React', 'Tailwind CSS'],
+    imageUrl: '/images/krishiclinic.jpg',
+    link: 'https://github.com/SaquibNazeer01/KrishiCllinicAI',
+    githubUrl: 'https://github.com/SaquibNazeer01/KrishiCllinicAI',
+    metrics: 'Smart Crop Diagnostics',
+    highlights: [
+      'Real-time leaf disease classification via deep neural networks',
+      'Actionable treatment plans with localized pesticide & fertilizer dosage calculation',
+      'Weather-adaptive preventive farming advisories & soil nutrition guidance'
+    ],
+    featured: true,
+    category: 'AI'
+  },
+  {
+    id: '7',
+    title: 'EconoMind - Explainable AI Shopping & Expense Copilot',
+    description: 'Multi-source financial data integration platform with Explainable AI (XAI), automated receipt/email invoice parsing, and voice-driven product search.',
+    whatIsIt: 'An intelligent financial assistant and smart shopping copilot that leverages Explainable AI (XAI) to unify multi-source financial data and provide transparent saving recommendations with voice product search.',
+    howItWorks: 'Parses multi-source financial data from emails, invoices, and web notifications; runs clustering models for behavioral spending analysis; features an isolated FastAPI voice search module (ASR + SERP Google Shopping API) for natural voice-driven product discovery.',
+    problemSolved: 'Combats black-box financial advice with transparent XAI reasoning while unifying fragmented spending data across platforms into actionable savings.',
+    technologies: ['Python', 'FastAPI', 'Docker', 'Alembic', 'SHAP / XAI', 'Speech-to-Text', 'SERP API'],
+    imageUrl: '/images/economind.jpg',
+    videoUrl: '/videos/xai-expenses-teaser.mp4',
+    link: 'https://github.com/SaquibNazeer01/EconoMind',
+    githubUrl: 'https://github.com/SaquibNazeer01/EconoMind',
+    metrics: 'XAI Financial Copilot',
+    highlights: [
+      'Explainable AI recommendations with transparent reasoning metrics',
+      'Voice-driven product search module with SERP pricing comparison',
+      'Multi-source invoice & receipt parsing with Dockerized FastAPI backend'
+    ],
+    featured: true,
     category: 'AI'
   },
   {
@@ -180,7 +219,7 @@ export const PROJECTS: Project[] = [
     technologies: ['Python', 'OpenCV', 'SQLite', 'Tkinter GUI'],
     imageUrl: '/images/Attendance.JPG',
     link: 'https://youtu.be/zxWtZIFV2-U?si=a2Fitm5zYI5f07B5',
-    githubUrl: 'https://github.com/SaquibNazeer01',
+    githubUrl: 'https://github.com/SaquibNazeer01/Face-Recognition-Attendance-System',
     metrics: '99.2% Detection Accuracy',
     highlights: [
       'Instant facial detection and biometric feature extraction',
@@ -200,7 +239,7 @@ export const PROJECTS: Project[] = [
     technologies: ['Python', 'MediaPipe', 'SpeechRecognition', 'Computer Vision'],
     imageUrl: '/images/smart-controller.jpeg',
     link: 'https://youtu.be/0fmJsbo6oIk?si=pGdZCy7MdWNg9LZR',
-    githubUrl: 'https://github.com/SaquibNazeer01',
+    githubUrl: 'https://github.com/SaquibNazeer01/Smart-Screen-Controller-using-hand-gestures-and-voice-commands',
     metrics: 'Zero-Touch Interaction',
     highlights: [
       'Real-time hand landmark tracking with sub-30ms latency',
@@ -220,7 +259,7 @@ export const PROJECTS: Project[] = [
     technologies: ['React', 'Node.js', 'Tailwind CSS', 'AI Recommendations'],
     imageUrl: '/images/ecoshop.png',
     link: 'https://youtu.be/jN5SsDSDm7c?si=b6yGlqfGVMVbEhFZ',
-    githubUrl: 'https://github.com/SaquibNazeer01',
+    githubUrl: 'https://github.com/SaquibNazeer01/Sustainable-E-Commerce-Platform',
     metrics: 'Carbon Tracking Engine',
     highlights: [
       'Real-time eco-score assessment on product catalogs',
@@ -228,6 +267,44 @@ export const PROJECTS: Project[] = [
       'Smart personalized eco-friendly alternatives engine'
     ],
     featured: true,
+    category: 'Web App'
+  },
+  {
+    id: '13',
+    title: 'VoxTalk - Real-Time Push-to-Talk Walkie Talkie',
+    description: 'Skeuomorphic real-time push-to-talk (PTT) walkie-talkie web app enabling zero-lag audio broadcasting across custom channels using WebSockets and WebRTC.',
+    whatIsIt: 'A real-time push-to-talk walkie talkie web application with skeuomorphic retro radio styling and instant channel broadcasting.',
+    howItWorks: 'Users enter a callsign and create or join 6-character channels; Socket.IO manages channel signaling and membership; WebRTC establishes direct peer-to-peer low-latency audio transmission when holding the PTT button or spacebar.',
+    problemSolved: 'Provides frictionless, instant voice collaboration for remote teams, event managers, and developers without sign-ups or complex VoIP setups.',
+    technologies: ['Node.js', 'Express', 'Socket.IO', 'WebRTC', 'JavaScript', 'CSS3'],
+    imageUrl: '/images/voxtalk.png',
+    link: 'https://voxtalk.onrender.com',
+    githubUrl: 'https://github.com/SaquibNazeer01/VoxTalk',
+    metrics: 'Live on Render',
+    highlights: [
+      'Zero-latency peer-to-peer audio transmission via WebRTC & Socket.IO',
+      'Skeuomorphic retro radio UI with spacebar push-to-talk support',
+      'Instant 6-character room codes with zero account friction'
+    ],
+    category: 'Tool'
+  },
+  {
+    id: '14',
+    title: 'Student Marks Management System',
+    description: 'Full-stack academic administration system featuring role-based dashboards, secure student performance tracking, normalized MySQL grade storage, and administrative CRUD workflows.',
+    whatIsIt: 'A robust academic management dashboard developed in PHP and MySQL for educational institutions to manage student grades, course enrollments, and academic performance.',
+    howItWorks: 'Implements MVC architecture with secure password hashing and session management; teachers and administrators perform CRUD operations on student profiles and marks; generates consolidated grade sheets and performance summaries.',
+    problemSolved: 'Replaces error-prone manual spreadsheets with an organized, relational database system for fast, accurate grading.',
+    technologies: ['PHP', 'MySQL', 'JavaScript', 'HTML5', 'CSS3', 'Apache'],
+    imageUrl: '/images/student-marks.jpg',
+    link: 'https://github.com/SaquibNazeer01/students-marks-management-system',
+    githubUrl: 'https://github.com/SaquibNazeer01/students-marks-management-system',
+    metrics: 'Academic Records Portal',
+    highlights: [
+      'Normalized relational database schema for student grades & subjects',
+      'Role-based session authentication and secure CRUD administration',
+      'Consolidated performance reports and grade calculation engine'
+    ],
     category: 'Web App'
   },
   {
@@ -240,7 +317,7 @@ export const PROJECTS: Project[] = [
     technologies: ['PHP', 'MySQL', 'JavaScript', 'HTML5', 'CSS3'],
     imageUrl: '/images/elitestyle.png',
     link: 'https://youtu.be/G4PxR9NKixY?si=OOmlCXY34jJmIVzw',
-    githubUrl: 'https://github.com/SaquibNazeer01',
+    githubUrl: 'https://github.com/SaquibNazeer01/EliteStyle---Ecommerce-Platform',
     metrics: 'Full Stack Shopping Engine',
     highlights: [
       'Robust product & category inventory management schema',
@@ -258,8 +335,8 @@ export const PROJECTS: Project[] = [
     problemSolved: 'Eliminates missed policy renewals, reduces customer service call volume by 40% through automated bots, and accelerates claims filing from days to minutes.',
     technologies: ['PHP', 'MySQL', 'JavaScript', 'AI ChatBot', 'Twilio API'],
     imageUrl: '/images/insurance.png',
-    link: 'https://swiftinsurex.wuaze.com/',
-    githubUrl: 'https://github.com/SaquibNazeer01',
+    link: 'https://youtu.be/0m3i4e5wK2s?si=p9qE1m0w',
+    githubUrl: 'https://github.com/SaquibNazeer01/Insurance-Management-System',
     metrics: 'Automated CRM & Alerts',
     highlights: [
       'Role-based admin and customer policy control dashboards',
@@ -277,8 +354,8 @@ export const PROJECTS: Project[] = [
     problemSolved: 'Replaces messy paper visitor logbooks with secure, searchable digital logs, drastically reducing check-in wait times and enforcing strict compliance standards.',
     technologies: ['Java', 'JavaFX', 'SQLite', 'Desktop GUI'],
     imageUrl: '/images/visitor-management.jpg',
-    link: '#',
-    githubUrl: 'https://github.com/SaquibNazeer01',
+    link: 'https://github.com/SaquibNazeer01/VisitorManagementSystem',
+    githubUrl: 'https://github.com/SaquibNazeer01/VisitorManagementSystem',
     metrics: '60% Workload Reduction',
     highlights: [
       'Digital visitor log tracking with instantaneous search',
@@ -297,7 +374,7 @@ export const PROJECTS: Project[] = [
     technologies: ['TypeScript', 'React', 'Tailwind CSS', 'Detection API'],
     imageUrl: '/images/DeepTraceX.jpeg',
     link: 'https://youtu.be/69ofbnRJJQI?si=XrOIwaVkXxXUxW1z',
-    githubUrl: 'https://github.com/SaquibNazeer01',
+    githubUrl: 'https://github.com/SaquibNazeer01/DeepTraceX',
     metrics: 'Synthetic Media Detection',
     highlights: [
       'Visual artifact & metadata inspection pipeline',
@@ -316,7 +393,7 @@ export const PROJECTS: Project[] = [
     technologies: ['JavaScript', 'HTML5', 'CSS3', 'Vercel'],
     imageUrl: '/images/vision.png',
     link: 'https://vision-cgpa.vercel.app',
-    githubUrl: 'https://github.com/SaquibNazeer01',
+    githubUrl: 'https://github.com/SaquibNazeer01/VisionCGPA-Anna-Univ',
     metrics: 'Live on Vercel',
     highlights: [
       'Automated grading point conversion per university regulation',
@@ -335,7 +412,7 @@ export const PROJECTS: Project[] = [
     technologies: ['Python', 'TensorFlow', 'Yahoo Finance API', 'Pandas'],
     imageUrl: '/images/market-prediction.jpg',
     link: '#',
-    githubUrl: 'https://github.com/SaquibNazeer01',
+    githubUrl: 'https://github.com/SaquibNazeer01/Market-Trend-Prediction',
     metrics: 'Time-Series Forecasting',
     highlights: [
       'LSTM time-series forecasting on historical price points',
@@ -398,59 +475,95 @@ You are NEXUS-019, the custom-engineered AI portfolio assistant, technical conci
 
 ### 🚀 COMPREHENSIVE PROJECT ARCHITECTURES & DEEP DIVES
 
-1. **SmartAttendX — Face Recognition Smart Attendance System**
+1. **ForensiFood AI — Food Delivery Fraud Detection (Featured AI)**
+   - **Overview**: AI-powered forensic fraud detection platform for food delivery refund claims with a 4-layer forensic pipeline analyzing claims in under 2.5 seconds.
+   - **How It Works**: When users submit refund claims with photos, the 4-layer AI pipeline executes: (1) Image Forensics (Error Level Analysis, EXIF metadata inspection, compression artifacts), (2) Multimodal AI Vision (semantic consistency check via Gemini Vision), (3) Behavioral Analysis (claim frequency, device fingerprinting, amount anomalies), and (4) Perceptual Hash (pHash) duplicate matching across accounts to generate a 0-100 risk verdict.
+   - **Problem Solved**: Eliminates fraudulent refund claims that cost food delivery companies ₹2,000+ crore annually in India, instantly approving legitimate claims while blocking photo fraudsters.
+   - **Stack**: React 19, TypeScript, Tailwind CSS, Node.js, Express, SQLite, Google Gemini Vision, JWT.
+   - **GitHub**: https://github.com/SaquibNazeer01/ForensiFood-AI
+
+2. **KrishiClinic AI — Smart Crop Health & Diagnostics (Featured AI)**
+   - **Overview**: AI-driven agricultural diagnostics platform empowering farmers with computer-vision crop disease detection, soil health recommendations, localized treatment advisories, and weather-adaptive crop protection.
+   - **How It Works**: Farmers upload or capture crop leaf photos; Deep Convolutional Neural Networks (CNNs) classify pathological disease patterns with confidence scoring; provides localized pesticide/fertilizer dosages, biological remedy advice, and climate-tailored preventive measures.
+   - **Problem Solved**: Mitigates catastrophic crop losses by enabling early, instant disease diagnosis without requiring on-field agricultural scientist visits.
+   - **Stack**: Python, PyTorch, Computer Vision, FastAPI, React, Tailwind CSS.
+   - **GitHub**: https://github.com/SaquibNazeer01/KrishiCllinicAI
+
+3. **EconoMind — Explainable AI Shopping & Expense Copilot (Featured AI / Completed)**
+   - **Overview**: Multi-source financial data integration platform with Explainable AI (XAI), automated receipt/email invoice parsing, and voice-driven product search.
+   - **How It Works**: Parses multi-source financial data from emails, invoices, and web notifications; runs clustering models for behavioral spending analysis; features an isolated FastAPI voice search module (ASR + SERP Google Shopping API) for natural voice-driven product discovery.
+   - **Problem Solved**: Combats black-box financial advice with transparent XAI reasoning while unifying fragmented spending data across platforms into actionable savings.
+   - **Stack**: Python, FastAPI, Docker, Alembic, SHAP / XAI, Speech-to-Text, SERP API.
+   - **GitHub**: https://github.com/SaquibNazeer01/EconoMind
+
+4. **VoxTalk — Real-Time Push-to-Talk Walkie Talkie (Tools)**
+   - **Overview**: Skeuomorphic real-time push-to-talk (PTT) walkie-talkie web app enabling zero-lag audio broadcasting across custom channels using WebSockets and WebRTC.
+   - **How It Works**: Users enter a callsign and create or join 6-character channels; Socket.IO manages channel signaling and membership; WebRTC establishes direct peer-to-peer low-latency audio transmission when holding the PTT button or spacebar.
+   - **Problem Solved**: Provides frictionless, instant voice collaboration for remote teams, event managers, and developers without sign-ups or complex VoIP setups.
+   - **Stack**: Node.js, Express, Socket.IO, WebRTC, JavaScript, CSS3.
+   - **Live Web App**: https://voxtalk.onrender.com
+   - **GitHub**: https://github.com/SaquibNazeer01/VoxTalk
+
+5. **Student Marks Management System (Web App)**
+   - **Overview**: Full-stack academic administration system featuring role-based dashboards, secure student performance tracking, normalized MySQL grade storage, and administrative CRUD workflows.
+   - **How It Works**: Implements MVC architecture with secure password hashing and session management; teachers and administrators perform CRUD operations on student profiles and marks; generates consolidated grade sheets and performance summaries.
+   - **Problem Solved**: Replaces error-prone manual spreadsheets with an organized, relational database system for fast, accurate grading.
+   - **Stack**: PHP, MySQL, JavaScript, HTML5, CSS3, Apache.
+   - **GitHub**: https://github.com/SaquibNazeer01/students-marks-management-system
+
+6. **SmartAttendX — Face Recognition Smart Attendance System (Featured AI)**
    - **Overview**: Contactless biometric attendance management automating daily attendance verification with high reliability.
    - **How It Works**: Streams live webcam/CCTV feeds via OpenCV; runs Haar cascade & Deep Neural Network (DNN) facial detection; extracts 128-d facial embedding vectors; matches against an encrypted SQLite biometric database; logs authenticated timestamps to exportable CSV reports with anti-spoofing verification.
    - **Problem Solved**: Completely eliminates manual roll calls and proxy attendance, saving 10-15 minutes per session with 99.2% accuracy.
    - **Stack**: Python, OpenCV, SQLite, Tkinter GUI.
    - **Video Demo**: https://youtu.be/zxWtZIFV2-U?si=a2Fitm5zYI5f07B5
 
-2. **Smart Screen Gesture Controller**
+7. **Smart Screen Gesture Controller (Featured AI)**
    - **Overview**: Touchless, AI-powered presentation and operating system controller using hand landmark tracking and voice recognition.
    - **How It Works**: Employs MediaPipe running at 30+ FPS to track 21 3D hand coordinates; converts spatial finger distances and pinches into OS actions (slide navigation, zoom, virtual laser pointer, drawing); integrates SpeechRecognition for hands-free vocal shortcuts.
    - **Problem Solved**: Enables hygienic, fluid, clicker-free presentations for keynote speakers, educators, and medical environments.
    - **Stack**: Python, MediaPipe, SpeechRecognition, PyAutoGUI, OpenCV.
    - **Video Demo**: https://youtu.be/0fmJsbo6oIk?si=pGdZCy7MdWNg9LZR
 
-3. **EconoShop — Sustainable E-Commerce & Carbon Footprint Engine**
+8. **EconoShop — Sustainable E-Commerce & Carbon Footprint Engine (Featured Web App)**
    - **Overview**: Eco-centric shopping platform that verifies green product lifecycles and transparently calculates carbon impacts.
    - **How It Works**: Calculates real-time carbon offsets for catalog items; displays dynamic Eco-Score badges; features an AI-driven "Green Alternatives" engine suggesting lower-emission substitutes at checkout; awards gamified eco-points.
    - **Problem Solved**: Fights greenwashing and gives conscious consumers actionable emissions data to make climate-positive purchases.
    - **Stack**: React, Node.js, Express, Tailwind CSS, AI Recommendation Engine.
    - **Video Demo**: https://youtu.be/jN5SsDSDm7c?si=b6yGlqfGVMVbEhFZ
 
-4. **EliteStyle — Commercial Full-Stack Apparel Retail Engine**
+9. **EliteStyle — Commercial Full-Stack Apparel Retail Engine (Web App)**
    - **Overview**: High-throughput commercial fashion e-commerce portal with seamless customer checkout and inventory management.
    - **How It Works**: PHP MVC architecture with normalized MySQL relational tables; parameterized prepared statements; session-based cart management; dynamic multi-attribute product filters; full administrative CRUD suite.
    - **Stack**: PHP, MySQL, JavaScript, HTML5, Tailwind/CSS3.
    - **Video Demo**: https://youtu.be/G4PxR9NKixY?si=OOmlCXY34jJmIVzw
 
-5. **SwiftInsureX — Smart Insurance Platform with WhatsApp Webhooks**
-   - **Overview**: Insurance policy management portal automating renewals and policy tracking with an integrated AI assistant.
-   - **How It Works**: Policyholder dashboard integrated with Twilio API webhooks for automated WhatsApp payment reminders and policy expiry warnings; on-page conversational assistant for instant claim status guidance.
-   - **Problem Solved**: Decreased policy lapse rates and reduced tier-1 customer support call load by 40%.
-   - **Stack**: PHP, MySQL, JavaScript, Twilio Webhooks, AI Chatbot.
-   - **Video Demo**: https://youtu.be/0m3i4e5wK2s?si=p9qE1m0w
+10. **SwiftInsureX — Smart Insurance Platform with WhatsApp Webhooks (Software)**
+    - **Overview**: Insurance policy management portal automating renewals and policy tracking with an integrated AI assistant.
+    - **How It Works**: Policyholder dashboard integrated with Twilio API webhooks for automated WhatsApp payment reminders and policy expiry warnings; on-page conversational assistant for instant claim status guidance.
+    - **Problem Solved**: Decreased policy lapse rates and reduced tier-1 customer support call load by 40%.
+    - **Stack**: PHP, MySQL, JavaScript, Twilio Webhooks, AI Chatbot.
+    - **Video Demo**: https://youtu.be/0m3i4e5wK2s?si=p9qE1m0w
 
-6. **NeuralFake — AI Deepfake Video & Image Detector**
-   - **Overview**: Forensic computer vision media verification engine detecting manipulated faces and synthetic generative artifacts.
-   - **How It Works**: Frame-by-frame deep neural analysis inspecting blending seam anomalies, unnatural facial warping, eye-blink frequency inconsistencies, and generative compression signatures.
-   - **Problem Solved**: Safeguards media authenticity against disinformation, deepfake fraud, and unauthorized identity duplication.
-   - **Stack**: Python, PyTorch, OpenCV, Flask API, React.
+11. **DeepTraceX / NeuralFake — AI Deepfake Video & Image Detector (Web App)**
+    - **Overview**: Forensic computer vision media verification engine detecting manipulated faces and synthetic generative artifacts.
+    - **How It Works**: Frame-by-frame deep neural analysis inspecting blending seam anomalies, unnatural facial warping, eye-blink frequency inconsistencies, and generative compression signatures.
+    - **Stack**: Python, PyTorch, OpenCV, Flask API, React.
+    - **Video Demo**: https://youtu.be/69ofbnRJJQI?si=XrOIwaVkXxXUxW1z
 
-7. **VisionCGPA — Academic GPA/CGPA Optimization Portal**
-   - **Overview**: Instant client-side GPA and CGPA calculator aligned with Anna University credit regulations.
-   - **How It Works**: Computes grade points, semester weighted averages, and target grade forecasting for academic planning.
-   - **Stack**: JavaScript, HTML5, CSS3, Vercel.
-   - **Live Link**: https://vision-cgpa.vercel.app
+12. **VisionCGPA — Academic GPA/CGPA Optimization Portal (Tool)**
+    - **Overview**: Instant client-side GPA and CGPA calculator aligned with Anna University credit regulations.
+    - **How It Works**: Computes grade points, semester weighted averages, and target grade forecasting for academic planning.
+    - **Stack**: JavaScript, HTML5, CSS3, Vercel.
+    - **Live Link**: https://vision-cgpa.vercel.app
 
-8. **AI Market Trend Prediction Engine**
-   - **Overview**: Financial forecasting engine utilizing LSTM Recurrent Neural Networks to predict asset trends and volatility markers.
-   - **Stack**: Python, TensorFlow/Keras, Pandas, NumPy, Yahoo Finance API.
+13. **Visitor Management Security Suite (Software)**
+    - **Overview**: Enterprise desktop software for automated visitor registration, badge issuance, and logs.
+    - **Stack**: Java, JavaFX, SQLite, Desktop GUI.
 
-9. **XAI Expenses — Intelligent Spending & Budget Optimizer**
-   - **Overview**: Personal finance intelligence system utilizing Explainable AI (XAI) for transparent budget and expense recommendations.
-   - **Stack**: Next.js, Python FastAPI, SHAP / LIME, Tailwind CSS.
+14. **AI Market Trend Prediction Engine (Tool)**
+    - **Overview**: Financial forecasting engine utilizing LSTM Recurrent Neural Networks to predict asset trends and volatility markers.
+    - **Stack**: Python, TensorFlow/Keras, Pandas, NumPy, Yahoo Finance API.
 
 ---
 

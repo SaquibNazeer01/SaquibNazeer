@@ -28,22 +28,30 @@
 
 ## ✦ Featured Projects
 
-1. **SmartAttendX - Face Recognition Smart Attendance System**
+1. **ForensiFood AI - Food Delivery Fraud Detection**
+   - 4-layer AI forensic pipeline (Error Level Analysis, EXIF metadata inspection, Multimodal AI Vision, and pHash duplicate matching) analyzing claims in under 2.5s to prevent refund fraud.
+2. **KrishiClinic AI - Smart Crop Health & Diagnostics**
+   - AI-driven plant diagnostics portal utilizing deep neural networks to detect crop diseases from leaf photographs and deliver localized treatment and dosage plans.
+3. **EconoMind - Explainable AI Shopping & Expense Copilot**
+   - Multi-source financial data integration platform with Explainable AI (XAI), automated invoice/receipt parsing, and isolated FastAPI voice search.
+4. **SmartAttendX - Face Recognition Smart Attendance System**
    - Contactless biometric attendance verification utilizing OpenCV, deep facial embeddings, SQLite vector storage, and anti-spoofing logic.
-2. **Smart Screen Gesture Controller**
+5. **Smart Screen Gesture Controller**
    - Touchless presentation and screen navigation via MediaPipe 30+ FPS hand landmark tracking and integrated speech recognition.
-3. **EconoShop - Sustainable E-Commerce Platform**
+6. **VoxTalk - Real-Time Push-to-Talk Walkie Talkie**
+   - Zero-lag audio walkie-talkie web app with skeuomorphic retro radio UI using WebSockets (Socket.IO) and WebRTC ([Live on Render](https://voxtalk.onrender.com)).
+7. **Student Marks Management System**
+   - Academic records portal with role-based administrative CRUD dashboards, normalized MySQL tables, and consolidated grade reporting.
+8. **EconoShop - Sustainable E-Commerce Platform**
    - Eco-conscious shopping platform with verified green product lifecycle metrics, automated carbon footprint calculation, and AI green alternatives recommendations.
-4. **SwiftInsureX - Smart Insurance Management Platform**
+9. **SwiftInsureX - Smart Insurance Management Platform**
    - End-to-end policy management portal with automated WhatsApp renewal notifications (Twilio webhooks) and conversational AI assistance.
-5. **EliteStyle - Full Stack Commercial Retail Platform**
-   - PHP & MySQL e-commerce store with normalized relational tables, parameterized SQL security, and administrative inventory CRUD workflows.
-6. **VisionCGPA - Academic CGPA Calculator**
-   - Client-side academic grading utility custom-tailored to Anna University curriculum regulations and credit weight schemes ([Live on Vercel](https://vision-cgpa.vercel.app)).
-7. **NeuralFake - AI Deepfake Video & Image Detector**
-   - Forensic media verification inspecting frame anomalies, blending seams, and compression markers.
-8. **XAI Expenses - Intelligent Spending Optimizer**
-   - Personal financial intelligence assistant providing Explainable AI (XAI) transparent reasoning for budget optimizations.
+10. **EliteStyle - Full Stack Commercial Retail Platform**
+    - PHP & MySQL e-commerce store with normalized relational tables, parameterized SQL security, and administrative inventory CRUD workflows.
+11. **VisionCGPA - Academic CGPA Calculator**
+    - Client-side academic grading utility custom-tailored to Anna University curriculum regulations and credit weight schemes ([Live on Vercel](https://vision-cgpa.vercel.app)).
+12. **DeepTraceX / NeuralFake - AI Deepfake Video & Image Detector**
+    - Forensic media verification inspecting frame anomalies, blending seams, and compression markers.
 
 ---
 
